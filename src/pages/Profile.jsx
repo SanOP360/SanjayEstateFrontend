@@ -170,7 +170,11 @@ export default function Profile() {
   const handleListingDelete = async (listingId) => {
     try {
       const res = await axios.post(
-        `${baseUrl}/api/listing/delete/${listingId}`
+        `${baseUrl}/api/listing/delete/${listingId}`,
+        {},
+        {
+          withCredentials: true,
+        }
       );
 
       if (res.data.success === false) {

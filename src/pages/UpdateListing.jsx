@@ -157,7 +157,7 @@ function UpdateListing() {
       setError(false);
       const res = await axios.post(
         `${baseUrl}/api/listing/update/${params.listingId}`,
-        formData
+        formData,{withCredentials:true}
       );
 
       setLoading(false);

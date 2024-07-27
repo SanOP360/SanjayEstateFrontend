@@ -134,7 +134,7 @@ function CreateListing() {
       setError(false);
       const res = await axios.post(
         `${baseUrl}/api/listing/create`,
-        formData
+        formData,{withCredentials:true}
       );
       
       setLoading(false);

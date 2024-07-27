@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 function Contact({ listing }) {
   const [landlord, setLandlord] = useState(null);

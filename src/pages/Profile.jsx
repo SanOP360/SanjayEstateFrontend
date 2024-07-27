@@ -23,7 +23,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 export default function Profile() {
   const dispatch = useDispatch();

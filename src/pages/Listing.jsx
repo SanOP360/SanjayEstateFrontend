@@ -18,7 +18,7 @@ import {
 import "swiper/css/bundle";
 
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 export default function Listing() {
   

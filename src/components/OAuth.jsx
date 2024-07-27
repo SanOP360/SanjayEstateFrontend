@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { signInSuccess } from "../redux/User/userSlice";
 import { useNavigate } from "react-router-dom";
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 export default function OAuth() {
   const dispatch = useDispatch();

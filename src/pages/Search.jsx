@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ListingItem from "../components/ListingItem";
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 function Search() {
   const [sidebardata, setSidebarData] = useState({

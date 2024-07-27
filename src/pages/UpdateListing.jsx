@@ -11,7 +11,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 function UpdateListing() {
   const navigate = useNavigate();

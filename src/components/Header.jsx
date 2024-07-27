@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const baseUrl = "http://localhost:10000";
+const baseUrl = "https://sanjay-estate-backend.vercel.app";
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);

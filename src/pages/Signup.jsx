@@ -31,14 +31,12 @@ export default function Signup() {
         `${baseUrl}/api/auth/signup`,
         formData
       );
-      console.log(res.data);
-      if (!res.data.success) {
-        setError(res.data.message);
-        setLoading(false);
-        return;
-      }
-      setLoading(false);
-      navigate("/sign-in");
+       if (res.data.success) {
+         navigate("/sign-in");
+       } else {
+         setError(res.data.message);
+         setLoading(false);
+       }
     } catch (error) {
       setError(
         error.response?.data?.message || "An error occurred during signup."
